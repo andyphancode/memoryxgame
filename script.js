@@ -152,6 +152,9 @@ function handleCardClick(event) {
       // disable the cards from being clicked for a bit
       firstSelection.classList.remove("disabled");
       gameContainer.classList.add("disabled");
+      //disable reset from being clicked for a bit
+      reset.classList.add("disabled");
+      reset.classList.add("hidden")
       // function to return opacity to overlaying images
       setTimeout(function(){
         // last card clicked overlaying image opacity restore
@@ -160,6 +163,8 @@ function handleCardClick(event) {
         firstSelection.firstElementChild.style.opacity = 1;
         // reinstate interactability
         gameContainer.classList.remove("disabled");
+        reset.classList.remove("disabled");
+        reset.classList.remove("hidden");
       },1000)
     }
   }
@@ -172,7 +177,6 @@ reset.addEventListener('click', function(){
   gameContainer.innerHTML = '';
   // reset storage variables
   selectedColor = '';
-  firstSelection = undefined;
   matchCount = 0;
   // reset guess count
   guesses = 0;

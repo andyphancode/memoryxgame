@@ -93,7 +93,7 @@ body {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   background-image: url(anyasunglasses.jpg);
   background-size: 100% 100%;
- 
+  user-select: none;
 }
 
 #reset {
@@ -108,6 +108,7 @@ body {
   font-size: 2rem;
   color: black;
   background-color: #FDDEA4;
+  user-select: none;
 }
 
 .hidden {
@@ -121,35 +122,47 @@ body {
 .topImage {
   width: 100%;
   height: 100%;
+  border-bottom: 2px solid black;
   object-fit: contain;
+  
 }
 
 .red {
   background-image: url(yor.png);
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 10px;
+  
 }
 
 .blue {
   background-image: url(anya.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 10px;
+  
 }
 
 .green {
   background-image: url(loid.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 10px;
+  
 }
 
 .orange {
   background-image: url(bond.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 10px;
+  
 }
 
 .purple {
   background-image: url(sylvia.png);
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 10px;
+  
 }
